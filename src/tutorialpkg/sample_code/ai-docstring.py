@@ -1,5 +1,5 @@
-
-    """ Prints information that the describes the contents of the DataFrame.
+def print_dataframe_info(df):
+    """ Prints information that describes the contents of the DataFrame.
 
       - Print the number of rows and columns in the DataFrame using `.shape`
       - Print the first 7 rows of data using `.head()` and the last 6 rows using `.tail()`

@@ -108,7 +108,8 @@ if __name__ == '__main__':
     npc_codes = pd.read_csv(npc_file, encoding='utf-8', encoding_errors='ignore', usecols = ['Code', 'Name'])
     merged_df = prepare_dataframe(csvdf, npc_codes)
 
-    merged_df.to_csv('paralympics_events_prepared.csv', index=False)
+    save_path = project_root.joinpath('tutorialpkg', 'data', 'paralympics_events_prepared.csv')
+    merged_df.to_csv(save_path, index=False)
 
     #print(merged_df[['country', 'Code', 'Name']])
     print(merged_df['type'].unique())
