@@ -14,7 +14,7 @@ def draw_histogram(df, columns):
 
 def draw_boxplot(df):
     
-    df.boxplot()
+    df.plot.box(subplots=True, sharey=False)
     #subplots=True, sharey=False
 
     #plt.savefig('bp_example.png')
