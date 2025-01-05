@@ -55,7 +55,6 @@ def draw_timeseries(df,date_column, value_column, filter_value):
     ax = df[df['type']=='summer'].plot(x=date_column, y='participants_f', label= 'Female')
     df[df['type']=='summer'].plot(x=date_column, y='participants_m', ax=ax, label='Male')
 
-
     plt.show()
 
 if __name__ == '__main__':
